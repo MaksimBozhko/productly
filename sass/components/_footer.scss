@@ -1,0 +1,22 @@
+.footer {
+    margin: 60px 0;
+}
+
+.footer-navigation__title {
+    margin: 0 0 15px;
+}
+
+.footer-navigation__links {
+    @extend %font-add;
+    list-style-type: none;
+    padding-left: 0;
+    a {
+        color: $color-text;
+        @extend %transition;
+        @include font (1.6rem, 3.5rem, 400);
+        text-decoration: none;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
